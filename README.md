@@ -24,6 +24,10 @@ $ dse spark-submit --executor-memory=20G --driver-memory=4G --class com.twitterd
 
 ## For more information on inserting data using DSE GraphFrames:
 
-[DSE Graph Frames]: <https://www.datastax.com/dev/blog/dse-graph-frame>
+1. [DSE Graph Frames Docs]
+
+2. [Detailed Code Example]
+
+[DSE Graph Frames Docs]: <https://www.datastax.com/dev/blog/dse-graph-frame>
 
 [Detailed Code Example]: <https://github.com/pmehra7/dseGraphFrameLoad/>
