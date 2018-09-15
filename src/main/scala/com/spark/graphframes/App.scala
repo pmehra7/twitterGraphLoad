@@ -43,7 +43,7 @@ object App {
     val edge_data_withLabels = edge_data
       .withColumn("srcLabel", lit("TwitterProfile"))
       .withColumn("dstLabel", lit("TwitterProfile"))
-      .withColumn("edgeLabel", lit("visits"))
+      .withColumn("edgeLabel", lit("follows"))
 
     val twitter_edges = edge_data_withLabels
       .select(g.idColumn(col("srcLabel"), col("node_id_from")) as "src", g.idColumn(col("dstLabel"), col("node_id_in")) as "dst", col("edgeLabel") as "~label")
