@@ -48,7 +48,7 @@ object App {
     val twitter_edges = edge_data_withLabels
       .select(g.idColumn(col("srcLabel"), col("node_id_from")) as "src", g.idColumn(col("dstLabel"), col("node_id_in")) as "dst", col("edgeLabel") as "~label")
 
-    println("\nWriting Twitter Follower Vertices")
+    println("\nWriting Twitter Follower Edges")
     g.updateEdges(twitter_edges)
 
 
