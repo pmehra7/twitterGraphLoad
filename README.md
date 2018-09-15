@@ -4,6 +4,8 @@ Loading 2010 Twitter Dataset to DSE Graph for Page Rank
 
 ## To Run: 
 
+Create the schema in the resources directory 
+
 ```sh
 $ cd twitterGraphLoad/
 $ mvn clean install
