@@ -6,10 +6,26 @@ Loading 2010 Twitter Dataset to DSE Graph for Page Rank
 
 Create the schema in the resources directory 
 
+Download the data
+```sh
+wget https://snap.stanford.edu/data/twitter-2010.txt.gz
+wget https://snap.stanford.edu/data/twitter-2010-ids.csv.gz
+```
+
+Put data into dsefs 
+```sh 
+dse hadoop fs -put twitter-2010.txt /data/
+dse hadoop fs -put twitter-2010-ids.csv /data/
+```
+
+Build the jar
+
 ```sh
 $ cd twitterGraphLoad/
 $ mvn clean install
 ```
+
+Run Spark Job
 
 ```sh
 $ cd twitterGraphLoad/target
